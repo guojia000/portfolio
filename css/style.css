@@ -296,6 +296,11 @@ header.sticky{
     width: 100%;
     border-radius: 28px;
     margin-bottom: 1.4rem;
+    opacity: 0.5;
+}
+.row a{
+    color: var(--text-color);
+    text-decoration: underline;
 }
 .row{
     background: var(--bg-color);
@@ -316,17 +321,7 @@ header.sticky{
     font-weight: 600;
     color: var(--other-color);
 }
-.row i{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 55px;
-    height: 55px;
-    font-size: 17px;
-    border-radius: 50%;
-    color: var(--text-color);
-    background: #401801;
-}
+
 .row h4{
     font-size: 25px;
     font-weight: 700;
@@ -337,6 +332,9 @@ header.sticky{
     border: 2px solid var(--main-color);
     transform: translateY(-5px) scale(1.03);
     cursor: pointer;
+}
+.row img:hover{
+    opacity: 1;
 }
 
 .contact-form{
