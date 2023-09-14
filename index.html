@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>  
 <body class="body">
 
@@ -41,7 +43,7 @@
 
     <!--main-->
     <section class="main" id="home">
-        <div class="main-content">
+        <div class="main-content" data-aos="fade-in">
             <h4>Hi, There!</h4>
             <h1>I'm <span>Jia Guo</span></h1>
             <p>As a highly motivated IT graduate,
@@ -63,11 +65,11 @@
 
     <!--about-->
     <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="fade-in">
             <img src="img/about.jpg">
         </div>
 
-        <div class="about-text">
+        <div class="about-text" data-aos="fade-in">
             <h2>I am an <span>Information Technology</span> graduate</h2>
             <div class="exp-area">
                 <p class="exp">
@@ -93,11 +95,11 @@
 
     <!--Information-->
     <section class="information" id="information">
-        <div class="center-text">
+        <div class="center-text" data-aos="fade-down">
             <h2>More <span>Information</span></h2>
         </div>
 
-        <div class="information-content">
+        <div class="information-content" data-aos="zoom-in-up">
             <div class="box">
                 <h3>Eduaction</h3>
                 <p>2020-02 - 2022-07<br>Master of Information Technology <br>The University of Queensland <br>Brisbane, QLD</p>
@@ -169,11 +171,11 @@
 
     <!--project-->
     <section class="project" id="project">
-        <div class="center-text">
+        <div class="center-text" data-aos="fade-down">
             <h2>My <span>Projects</span></h2>
         </div>
 
-        <div class="Project-content">
+        <div class="Project-content" data-aos="zoom-in-up">
             <div class="row">
                 <img src="img/background.jpg">
                 <div class="main-row">
@@ -217,11 +219,11 @@
 
     <!--contact-->
     <section class="contact" id="contact">
-        <div class="center-text">
+        <div class="center-text" data-aos="fade-down">
             <h2>Contact <span>Me</span></h2>
         </div>
 
-        <div class="contact-form">
+        <div class="contact-form" data-aos="zoom-in">
             <form action="">
                 <input type="text" placeholder="Your name" required>
                 <input type="email" placeholder="Email Address.." required>
@@ -243,6 +245,14 @@
 
     <!--js link-->
     <script src="js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1400,
+        });
+    </script>
 </body>
 
 
