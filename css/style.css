@@ -14,7 +14,7 @@ declare global variable
 :root{
     --text-color: #fff;
     --bg-color: #2A1B11;
-    --second-bg-color: #522707;
+    --second-bg-color: #8F8168;
     --main-color: #F2E74B;
     --other-color: #c3cad5;
 
@@ -182,8 +182,8 @@ header.sticky{
     max-width: 530px;
     border-radius: 50%;
     object-fit: cover;
-    border: 7px solid var(--main-color);
-    box-shadow: 0 0 20px var(--main-color);
+    border: 8px solid var(--second-bg-color);
+    box-shadow: 0 0 20px var(--second-bg-color);
 }
 .about-text h2{
     font-size: var(--h2-font);
@@ -219,6 +219,18 @@ header.sticky{
     gap: 2.3rem;
     margin-top: 4.2rem;
 }
+.hide-information-content{
+    margin-top: 20px;
+}
+.hide-information-content #hide-edu{
+    display: none;
+}
+.hide-information-content #hide-skl{
+    display: none;
+}
+.hide-information-content #hide-cert{
+    display: none;
+}
 .box{
     padding: 80px 40px 66px;
     background: var(--bg-color);
@@ -240,15 +252,17 @@ header.sticky{
     line-height: 30px;
     margin-bottom: 20px;
 }
-.box a{
+.box a,input{
     display: inline-block;
     font-size: 22px;
     line-height: 1.273em;
     font-weight: 700;
     padding: 7px 0;
     color: var(--text-color);
+    border: none;
     border-bottom: 2px solid var(--other-color);
     transition: all 0.5 ease;
+    background-color: transparent;
 }
 .box i{
     vertical-align: middle;
@@ -257,6 +271,9 @@ header.sticky{
     margin-left: 5px;
 }
 .box a:hover{
+    border-bottom: 2px solid var(--main-color);
+}
+.box input:hover{
     border-bottom: 2px solid var(--main-color);
 }
 .box:hover{
@@ -281,7 +298,7 @@ header.sticky{
     margin-bottom: 1.4rem;
 }
 .row{
-    background: #794D28;
+    background: var(--bg-color);
     border-radius: 28px;
     border: 1px solid transparent;
     box-shadow: 0 0 5px var(--second-bg-color);
